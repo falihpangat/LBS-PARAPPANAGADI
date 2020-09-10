@@ -1,0 +1,86 @@
+<html>
+  <head>
+    <title>Admin</title>
+    <link href="index.css" type="text/css" rel="stylesheet">
+  </head>
+  <body>
+    
+
+        <!-- The sidebar -->
+  <div class="navbar">
+           <div class="adminame">
+               <a href="#admin">Admin</a>
+           </div>
+           <div class="pic">
+               <img src="image/adminlogo.png" width="40" height="40">
+           </div>   
+       </div>
+<form id="myForm" action="" method="post" onsubmit="return false">
+
+ <div class="content">
+       <div class="sidebar">
+           <a class="active" href="#home" onclick="return toggle('pg0')">Home</a>        
+            <a  href="#student" onclick="return toggle('pg1')">Student</a>
+            <a href="#faculty" onclick="return toggle('pg2')">Faculty</a>
+           <a href="#users" onclick="return toggle('pg3')">faculty login create</a>
+           <a href="#logout" onclick="return toggle('pg4')">Notification</a>
+           <a href="#logout" onclick="return toggle('pg5')">Uploads</a>
+           <a href="#logout" onclick="return toggle('pg6')">Events</a>
+           <a href="../index.php" onclick="return toggle('pg7')">Logout</a>
+       </div>
+
+<!-- Page content -->
+<div id="pg">
+  <div id="pg0" class="pg"> 
+     <a href="student reg/fetch.php" class="button" ><br><br>Student</a>
+     <a href="faculty reg/fetch.php" class="button"><br><br>Faculty</a>
+     <a  href="#" class="button" ><br><br>User</a>   
+    
+  </div>
+
+  <div id="pg1" class="pg"> 
+      <a href="student reg/registration/index.html" class="button"  ><br><br>Add Student</a>
+      <a href="student reg/function.php" class="button"><br><br>Remove & Update</a>
+      <a  href="student reg/fetch.php" class="button"><br><br>Browse Student</a>     
+  </div>
+
+  <div id="pg2" class="pg"> 
+      <a href="faculty reg/isert.php" class="button"  ><br><br>Add Faculty</a>
+      <a href="faculty reg/function.php" class="button"><br><br>Remove & Update</a>
+      <a  href="faculty reg/fetch.php" class="button"><br><br>Browse Faculty</a>     
+  </div>
+  <div id="pg3" class="pg">
+   <a href="faculty reg/login/create password.php" class="button"><br><br>Add</a>
+   <a href="faculty reg/login/function.php" class="button"><br><br>Remove & Update</a>
+   <a  href="faculty reg/login/fetch.php" class="button"><br><br>Browse</a>
+    </div>
+ 
+  <div id="pg4" class="pg">
+   <a href="notification/fetch.php" class="button"><br><br>Add Notification</a>
+   <a href="notification/function.php" class="button"><br><br>Remove & Update</a>
+   <a  href="notification/fetch.php" class="button"><br><br>Browse Notification</a>
+    </div>
+ 
+
+</div>
+</form>
+<script type="text/javascript">
+  function toggle(IDS) {
+    var sel = document.getElementById('pg').getElementsByTagName('div');
+    for (var i=0; i<sel.length; i++) { 
+      if (sel[i].id != IDS) { sel[i].style.display = 'none'; }
+    }
+    var status = document.getElementById(IDS).style.display;
+    if (status == 'block') { document.getElementById(IDS).style.display = 'none'; }
+                      else { document.getElementById(IDS).style.display = 'block'; }
+  
+    return false;
+  }
+
+  function goStudent(){
+  var stud1= doocument.getElementById('stud1'); 
+   }
+
+  </script>
+  </body>
+</html>
