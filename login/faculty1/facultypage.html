@@ -1,0 +1,114 @@
+<!Doctype html>
+<html lang="en">
+ <head>
+  <title>Course Page</title>
+  <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+  <style>
+	@import url(https://fonts.googleapis.com/css?family=Noto+Sans:400,700,400italic,700italic);
+
+body{
+  padding-left: 330px;
+  background-color:  #FF5733;
+}
+h1{
+  padding-left: 50px;
+  color: white;
+}
+.card {
+  background-color: #DAF7A6 ;
+  height: 400px;
+  width: 300px;
+  position: relative;
+  margin: 20px;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+  overflow: hidden;
+  float:left;
+}
+
+.card:hover {
+  box-shadow: 0px 30px 30px rgba(0,0,0,0.2);
+}
+
+
+
+
+h2 {
+  text-align: center;
+  margin-top: 210px;
+  position: absolute;
+  z-index: 1;
+  font-size: 26px;
+  color: #2196F3;
+  width: 100%;
+  font-family: 'Noto Sans', serif;
+}
+
+h2 small {
+  font-weight: normal;
+  font-size: 65%;
+  color: #2b2b2b;
+  padding: 0 10px;
+  line-height:0.5;
+}
+
+
+
+p {
+  color:#2b2b2b; 
+  position: absolute;
+  bottom:-100%;
+  padding: 20px;
+  font-family: 'Noto Sans', serif;
+  font-size:17px;
+ 
+}
+
+.card:hover .pone{
+  bottom:0%;
+}
+.card:hover .ptwo{
+  bottom:15%;
+}
+.card:hover .pthree{
+  bottom:15%;
+}
+
+.fa, .fas, .fab{
+	position: absolute;
+    z-index: 1;
+	top: 150px;
+    left: 40%;
+	font-size:55px;
+}
+
+.fa-user-circle{
+	color:#2b2b2b;
+}
+.card:hover .fa, .card:hover .fas, .card:hover .fab{
+	top: -60px;
+}
+
+.card:hover .fa-user-circle{
+	color:#fff;
+}
+
+
+  </style>
+ </head>
+ <body>
+    <h1>INTERNAL MARKS AND ATTENDENCE</h1>
+    
+      <a href="attandance/isert.php"><div class="card transition" >
+      <h2 class="transition">Add Attendance<br><small>click hear to add</small></h2>
+      <div class="card_circle transition"></div>
+        <p class="transition pone"></p> 
+      </div></a>
+
+      <a href="internal/isert.php"><div class="card transition" >
+      <h2 class="transition">Add Internal mark<br><small>click hear to add</small></h2>
+      <div class="card_circle transition"></div>
+        <p class="transition ptwo"></p> 
+      </div></a>
+      
+    </body>
+  </html>
